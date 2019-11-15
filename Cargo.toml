@@ -21,7 +21,20 @@ name = "leveldb"
 
 db-key = "0.0.5"
 libc = "0.2.4"
-leveldb-sys = { git = "https://github.com/timberio/leveldb-sys", branch = "v3.0.0" }
+
+[dependencies.leveldb-sys-2]
+package = "leveldb-sys"
+version = "2.0.0"
+features = ["snappy"]
+optional = true
+
+[dependencies.leveldb-sys-3]
+package = "leveldb-sys"
+version = "3.0.0"
+git = "https://github.com/timberio/leveldb-sys"
+branch = "v3.0.0"
+features = ["snappy"]
+optional = true
 
 [dev-dependencies]
 tempdir = "0.3.4"

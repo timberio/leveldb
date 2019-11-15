@@ -24,8 +24,18 @@ If your project is using [Cargo](http://crates.io), drop the following lines in 
 ```text
 [dependencies]
 
-leveldb = "0.8"
+leveldb = { version = "0.9", featuers = "leveldb-sys-2" }
 ```
+
+If you want use newer versions of LevelDB which requie `cmake` as build dependency, use
+
+```text
+[dependencies]
+
+leveldb = { version = "0.9", features = "leveldb-sys-3" }
+```
+
+instead.
 
 ## Development
 
