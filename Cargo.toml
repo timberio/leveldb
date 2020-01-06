@@ -41,3 +41,6 @@ tempdir = "0.3.4"
 
 [[test]]
 name = "tests"
+
+[features]
+default = ["leveldb-sys-2"]
